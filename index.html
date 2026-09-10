@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>(function(){try{var t=localStorage.getItem("mtk-theme");if(t==="light"||(!t&&window.matchMedia("(prefers-color-scheme: light)").matches&&!window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.setAttribute("data-theme","light");}}catch(e){}})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Talha Khan — Computer Science student at SZABIST Islamabad focused on software engineering, AI/ML, and networking.">
+    <title>Muhammad Talha Khan | Software Engineer &amp; AI Enthusiast</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#090c14">
+    <meta name="author" content="Muhammad Talha Khan">
+    <link rel="canonical" href="https://talhabytes.github.io/Personal-Portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TalhaBytes | Muhammad Talha Khan">
+    <meta property="og:title" content="Muhammad Talha Khan | Software Engineer &amp; AI Enthusiast">
+    <meta property="og:description" content="Muhammad Talha Khan — Computer Science student at SZABIST Islamabad focused on software engineering, AI/ML, and networking.">
+    <meta property="og:url" content="https://talhabytes.github.io/Personal-Portfolio/">
+    <meta property="og:image" content="https://talhabytes.github.io/Personal-Portfolio/assets/social-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TB - Muhammad Talha Khan, Computer Science and Software Development">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Talha Khan | Software Engineer &amp; AI Enthusiast">
+    <meta name="twitter:description" content="Muhammad Talha Khan — Computer Science student at SZABIST Islamabad focused on software engineering, AI/ML, and networking.">
+    <meta name="twitter:image" content="https://talhabytes.github.io/Personal-Portfolio/assets/social-preview.png">
+    <noscript><style>body{opacity:1!important;transform:none!important}.preloader{display:none!important}[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="line"><span class="prompt">$</span><span>whoami</span></div>
+            <div class="line"><span class="prompt">$</span><span>talha-khan <span class="ok">--role=swe,ai,net</span></span></div>
+            <div class="line"><span class="prompt">$</span><span>./portfolio --start</span></div>
+            <div class="preloader-bar"><span></span></div>
+        </div>
+    </div>
+
+    <div class="nav-scrim"></div>
+
+    <!-- ================= SITE SEARCH ================= -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-box">
+            <div class="search-input-row">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search the portfolio... (e.g. Python, internship, SZABIST)" autocomplete="off" aria-label="Search the portfolio">
+                <button class="search-close" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <p class="search-hint">Try &ldquo;Python&rdquo;, &ldquo;internship&rdquo;, &ldquo;XGBoost&rdquo;, or &ldquo;SZABIST&rdquo;.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo" data-no-transition><span class="tb-mark" aria-hidden="true">TB</span> talha<span class="accent">.</span>dev<span class="cursor-blink"></span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+<a class="icon-btn" href="https://github.com/TalhaBytes" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a class="icon-btn" href="https://www.linkedin.com/in/muhammad-talha-khan-b0a96428b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="icon-btn" href="mailto:talhakhan333000@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle light / dark theme"><i class="fa-solid fa-moon theme-icon-dark"></i><i class="fa-solid fa-sun theme-icon-light"></i></button>
+                <button class="icon-btn" id="searchToggle" aria-label="Search (press /)"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home-hero">
+        <div class="hero-canvas"><canvas id="networkCanvas"></canvas></div>
+
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+            <!--<div class="hero-eyebrow">
+                    <span class="prompt">$</span>&nbsp;<span class="typed" data-typed-eyebrow="whoami"></span> 
+                </div>-->
+
+                <h1>Muhammad Talha<br><span class="grad">Khan</span></h1>
+
+                <div class="role-line">
+                    <span data-role-rotator='["Software Engineer","AI / ML Enthusiast","Network Enthusiast","Problem Solver"]'></span><span class="role-caret"></span>
+                </div>
+
+                <p>
+                    Computer Science student at SZABIST Islamabad, building at the
+                    intersection of software engineering, artificial intelligence, and
+                    networking — with hands-on experience across ML models, systems
+                    projects, and enterprise network operations.
+                </p>
+
+                <div class="hero-actions"><a href="assets/Muhammad-Talha-Khan-Resume.pdf" class="btn btn-ghost" download data-no-transition>Download Resume (PDF)</a>
+                    <a href="experience.html" class="btn btn-primary magnetic"><i class="fa-solid fa-diagram-project"></i> View Experience</a>
+                    <a href="contact.html" class="btn btn-ghost magnetic"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong><span data-counter="7">0</span><span class="suffix">th</span></strong>
+                        <span>Semester</span>
+                    </div>
+                    <div class="stat">
+                        <strong><span data-counter="4">0</span><span class="suffix">+</span></strong>
+                        <span>Projects Built</span>
+                    </div>
+                    <div class="stat">
+                        <strong><span data-counter="1">0</span></strong>
+                        <span>Internship</span>
+                    </div>
+                    <div class="stat">
+                        <strong>2027</strong>
+                        <span>Expected Grad.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-photo-frame">
+                    <div class="ring"></div>
+                    <img src="images/profile.jpg" alt="Muhammad Talha Khan">
+                    <div class="badge"><i class="fa-solid fa-location-dot" style="color:var(--accent)"></i>&nbsp;Islamabad, Pakistan</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about">
+        <div class="container">
+
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">About</span>
+                <h2>About Me</h2>
+                <p>The academic and personal foundation behind what I build.</p>
+            </div>
+
+            <div class="about-container">
+                <div class="card about-card tilt" id="about-details" data-reveal="left">
+                    <h3><i class="fa-solid fa-address-card"></i> Personal Details</h3>
+
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-user"></i> Name</span>
+                        <span class="value">Muhammad Talha Khan</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-location-dot"></i> City</span>
+                        <span class="value">Islamabad</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-graduation-cap"></i> University</span>
+                        <span class="value">SZABIST Islamabad</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-book"></i> Degree</span>
+                        <span class="value">BS Computer Science</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-calendar"></i> Semester</span>
+                        <span class="value">7th Semester</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-award"></i> Expected Graduation</span>
+                        <span class="value">2027</span>
+                    </div>
+                </div>
+
+                <div class="card about-card objective tilt" id="about-objective" data-reveal="right">
+                    <h3><i class="fa-solid fa-bullseye"></i> Career Objective</h3>
+                    <p>
+                        My goal is to become a Software Engineer specializing in
+                        Artificial Intelligence, Machine Learning, and innovative
+                        software solutions that solve real-world problems.
+                    </p>
+                    <p>
+                        I'm especially drawn to work where systems thinking meets
+                        intelligence — from training models that predict outcomes
+                        to understanding the networks that move their data.
+                    </p>
+                    <div class="focus-tags">
+                        <span>#MachineLearning</span>
+                        <span>#SoftwareEngineering</span>
+                        <span>#Networking</span>
+                        <span>#WebDevelopment</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FEATURED HIGHLIGHTS ================= -->
+    <section class="highlights" id="highlights">
+        <div class="container">
+
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Featured Work</span>
+                <h2>Featured Work</h2>
+                <p>A few of the projects and experiences shaping my path so far.</p>
+            </div>
+
+            <div class="highlights-grid"><div class="highlight-card tilt" data-reveal><div class="highlight-icon"><i class="fa-brands fa-github"></i></div><h3>DevPulse</h3><p>A responsive GitHub dashboard for exploring developer profiles, repositories, and language statistics.</p><div class="tag-row"><span>JavaScript</span><span>REST API</span><span>CSS</span></div><a class="card-link" href="https://github.com/TalhaBytes/devpulse" target="_blank" rel="noopener noreferrer">View Code on GitHub <i class="fa-solid fa-arrow-right"></i></a></div>
+                <div class="highlight-card tilt" data-reveal data-reveal-delay="0">
+                    <div class="highlight-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Network Administration Intern</h3>
+                    <p>Assisted with monitoring and troubleshooting on enterprise infrastructure at the Ministry of Foreign Affairs, working hands-on with Cisco devices.</p>
+                    <div class="tag-row"><span>Cisco</span><span>Security</span><span>IT Ops</span></div>
+                    <a href="experience.html" class="card-link">View details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="highlight-card tilt" data-reveal data-reveal-delay="100">
+                    <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Stock Price Prediction</h3>
+                    <p>Built and compared Linear Regression, Decision Tree, and XGBoost models for stock forecasting, reaching a 99.5% R² score.</p>
+                    <div class="tag-row"><span>Python</span><span>ML</span><span>XGBoost</span></div>
+                    <a href="experience.html" class="card-link">View details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="highlight-card tilt" data-reveal data-reveal-delay="200">
+                    <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>This Portfolio</h3>
+                    <p>A fully responsive, multi-page personal site — hand-built with HTML, CSS, and JavaScript, animated from the ground up.</p>
+                    <div class="tag-row"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    <a href="experience.html" class="card-link">View details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= ON-THIS-PAGE QUICK NAV ================= -->
+    <div class="home-quicknav" data-reveal>
+        <span class="home-quicknav-label"><i class="fa-solid fa-arrow-down"></i> Jump to:</span>
+        <a href="#home-experience">Experience</a>
+        <a href="#home-skills">Skills</a>
+        <a href="#home-education">Education</a>
+        <a href="#home-contact">Contact</a>
+    </div>
+
+
+    <!-- ================= EXPERIENCE (full, inline) ================= -->
+    <section class="experience" id="home-experience">
+        <div class="container">
+
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Experience</span>
+                <h2>Professional Experience</h2>
+                <p>My journey in technology includes internships, academic projects, leadership experiences, and continuous learning in software development, artificial intelligence, networking, and web technologies.</p>
+            </div>
+
+            <div class="filter-row" data-reveal>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="internship">Internship</button>
+                <button class="filter-btn" data-filter="project">Projects</button>
+                <button class="filter-btn" data-filter="leadership">Leadership</button>
+            </div>
+
+            <div class="timeline"><div class="experience-card" id="home-exp-devpulse" data-category="project" data-reveal>
+    <div class="node"><i class="fa-brands fa-github"></i></div><div class="card-body tilt">
+    <div class="card-top"><h2>DevPulse</h2><span class="period">HTML · CSS · JavaScript · GitHub REST API</span></div>
+    <h4>GitHub Developer Dashboard</h4><ul>
+    <li>Built a responsive dashboard for exploring public GitHub profiles and repositories.</li>
+    <li>Displayed repository statistics, top repositories, stars, forks, and programming-language distribution.</li>
+    <li>Added saved themes, loading states, caching, and handling for API errors and rate limits.</li>
+    </ul><a class="card-link" href="https://github.com/TalhaBytes/devpulse" target="_blank" rel="noopener noreferrer">View Code on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div></div>
+
+                <div class="experience-card" id="home-exp-network-intern" data-category="internship" data-reveal>
+                    <div class="node"><i class="fa-solid fa-network-wired"></i></div>
+                    <div class="card-body tilt">
+                        <div class="card-top">
+                            <h2>Network Administration Intern</h2>
+                            <span class="period">Jul 2026 – Aug 2026</span>
+                        </div>
+                        <h4>Ministry of Foreign Affairs (MOFA)</h4>
+                        <ul>
+                            <li>Assisted in network monitoring and troubleshooting.</li>
+                            <li>Observed enterprise network infrastructure.</li>
+                            <li>Worked with Cisco networking devices.</li>
+                            <li>Learned network security practices.</li>
+                            <li>Gained real-world experience in IT operations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" id="home-exp-stock-prediction" data-category="project" data-reveal>
+                    <div class="node"><i class="fa-solid fa-brain"></i></div>
+                    <div class="card-body tilt">
+                        <div class="card-top">
+                            <h2>Stock Price Prediction</h2>
+                            <span class="period">Python · AI · Data Science</span>
+                        </div>
+                        <h4>Machine Learning Project</h4>
+                        <ul>
+                            <li>Built predictive models using Python.</li>
+                            <li>Implemented Linear Regression.</li>
+                            <li>Compared Decision Tree and XGBoost models.</li>
+                            <li>Achieved an R² score of 99.5%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" id="home-exp-trivia-quiz" data-category="project" data-reveal>
+                    <div class="node"><i class="fa-solid fa-gamepad"></i></div>
+                    <div class="card-body tilt">
+                        <div class="card-top">
+                            <h2>Trivia Quiz Game</h2>
+                            <span class="period">Object-Oriented Programming</span>
+                        </div>
+                        <h4>C++ Project</h4>
+                        <ul>
+                            <li>Developed an interactive quiz game.</li>
+                            <li>Implemented score calculation.</li>
+                            <li>Applied OOP concepts.</li>
+                            <li>Improved classroom engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" id="home-exp-portfolio-website" data-category="project" data-reveal>
+                    <div class="node"><i class="fa-solid fa-code"></i></div>
+                    <div class="card-body tilt">
+                        <div class="card-top">
+                            <h2>Personal Portfolio Website</h2>
+                            <span class="period">HTML · CSS · JavaScript</span>
+                        </div>
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li>Designed a fully responsive multi-page website.</li>
+                            <li>Built custom animation and interaction systems.</li>
+                            <li>Implemented on-site keyword search.</li>
+                            <li>Focused on accessible, professional UI design.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card" id="home-exp-study-group" data-category="leadership" data-reveal>
+                    <div class="node"><i class="fa-solid fa-users"></i></div>
+                    <div class="card-body tilt">
+                        <div class="card-top">
+                            <h2>Programming Study Group Leader</h2>
+                            <span class="period">Peer Learning</span>
+                        </div>
+                        <h4>Academic Leadership</h4>
+                        <ul>
+                            <li>Led OOP study sessions.</li>
+                            <li>Helped classmates prepare for exams.</li>
+                            <li>Improved communication and leadership skills.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-cta" data-reveal>
+                <a href="experience.html" class="btn btn-ghost">Open the full Experience page <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SKILLS (full, inline) ================= -->
+    <section class="skills-section" id="home-skills">
+        <div class="container">
+
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Skills</span>
+                <h2>Technical Skills</h2>
+                <p>Throughout my academic journey and personal projects, I've developed strong technical and problem-solving skills in programming, artificial intelligence, networking, databases, and web development.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card tilt" id="home-skills-programming" data-reveal>
+                    <h2><i class="fa-solid fa-terminal"></i> Programming Languages</h2>
+                    <div class="skill">
+                        <div class="skill-top"><span class="name">C / C++</span><span class="pct">90%</span></div>
+                        <div class="progress"><div class="progress-bar" data-width="90"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="name">Python</span><span class="pct">88%</span></div>
+                        <div class="progress"><div class="progress-bar" data-width="88"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="name">Java</span><span class="pct">80%</span></div>
+                        <div class="progress"><div class="progress-bar" data-width="80"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="name">JavaScript</span><span class="pct">85%</span></div>
+                        <div class="progress"><div class="progress-bar" data-width="85"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-card tilt" id="home-skills-webdev" data-reveal data-reveal-delay="60">
+                    <h2><i class="fa-solid fa-globe"></i> Web Development</h2>
+                    <div class="chip-row">
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS3</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Responsive Design</span>
+                        <span class="chip">Multi-Page Websites</span>
+                    </div>
+                </div>
+
+                <div class="skill-card tilt" id="home-skills-ai" data-reveal>
+                    <h2><i class="fa-solid fa-brain"></i> AI &amp; Data Science</h2>
+                    <div class="chip-row">
+                        <span class="chip">Machine Learning</span>
+                        <span class="chip">Linear Regression</span>
+                        <span class="chip">Decision Trees</span>
+                        <span class="chip">XGBoost</span>
+                        <span class="chip">Data Analysis</span>
+                        <span class="chip">Matplotlib</span>
+                        <span class="chip">Tableau</span>
+                    </div>
+                </div>
+
+                <div class="skill-card tilt" id="home-skills-database" data-reveal data-reveal-delay="60">
+                    <h2><i class="fa-solid fa-database"></i> Database</h2>
+                    <div class="chip-row">
+                        <span class="chip">SQL</span>
+                        <span class="chip">Database Design</span>
+                        <span class="chip">Normalization</span>
+                        <span class="chip">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card tilt" id="home-skills-networking" data-reveal>
+                    <h2><i class="fa-solid fa-network-wired"></i> Networking &amp; Tools</h2>
+                    <div class="chip-row">
+                        <span class="chip">Cisco Packet Tracer</span>
+                        <span class="chip">Wireshark</span>
+                        <span class="chip">Git &amp; GitHub</span>
+                        <span class="chip">Visual Studio Code</span>
+                        <span class="chip">Microsoft Office</span>
+                    </div>
+                </div>
+
+                <div class="skill-card tilt" id="home-skills-soft" data-reveal data-reveal-delay="60">
+                    <h2><i class="fa-solid fa-comments"></i> Soft Skills</h2>
+                    <div class="chip-row">
+                        <span class="chip">Leadership</span>
+                        <span class="chip">Problem Solving</span>
+                        <span class="chip">Communication</span>
+                        <span class="chip">Presentation Skills</span>
+                        <span class="chip">Research</span>
+                        <span class="chip">Teamwork</span>
+                        <span class="chip">Time Management</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-cta" data-reveal>
+                <a href="skills.html" class="btn btn-ghost">Open the full Skills page <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= EDUCATION (full, inline) ================= -->
+    <section class="education" id="home-education">
+        <div class="container">
+
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Education</span>
+                <h2>Education</h2>
+                <p>My educational journey has provided me with a strong foundation in computer science, programming, software engineering, artificial intelligence, networking, and database systems.</p>
+            </div>
+
+            <div class="edu-timeline">
+
+                <div class="education-card" id="home-edu-bs" data-reveal>
+                    <div class="node"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="card-body tilt">
+                        <h2>Bachelor of Science in Computer Science</h2>
+                        <h3>Shaheed Zulfikar Ali Bhutto Institute of Science &amp; Technology</h3>
+                        <div class="edu-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</span>
+                            <span><i class="fa-solid fa-calendar"></i> 2023 – 2027</span>
+                            <span><i class="fa-solid fa-circle-check"></i> 7th Semester</span>
+                        </div>
+                        <div class="course-tags">
+                            <span>Object-Oriented Programming</span>
+                            <span>Data Structures &amp; Algorithms</span>
+                            <span>Database Systems</span>
+                            <span>Web Engineering</span>
+                            <span>Artificial Intelligence</span>
+                            <span>Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card" id="home-edu-ics" data-reveal>
+                    <div class="node"><i class="fa-solid fa-school"></i></div>
+                    <div class="card-body tilt">
+                        <h2>Intermediate in Computer Science (ICS)</h2>
+                        <h3>Islamabad Model College for Boys I-10/1</h3>
+                        <div class="edu-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Islamabad</span>
+                            <span><i class="fa-solid fa-circle-check"></i> Completed 2022</span>
+                        </div>
+                        <div class="course-tags">
+                            <span>Computer Science</span>
+                            <span>Mathematics</span>
+                            <span>Physics</span>
+                            <span>Programming Fundamentals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card" id="home-edu-matric" data-reveal>
+                    <div class="node"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="card-body tilt">
+                        <h2>Matriculation</h2>
+                        <h3>Islamabad Model College for Boys I-10/1</h3>
+                        <div class="edu-meta">
+                            <span><i class="fa-solid fa-circle-check"></i> Completed 2020</span>
+                            <span><i class="fa-solid fa-flask"></i> Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-cta" data-reveal>
+                <a href="education.html" class="btn btn-ghost">Open the full Education page <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CONTACT (full, inline) ================= -->
+    <section class="contact" id="home-contact">
+        <div class="container">
+
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">Contact</span>
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing internships, software development opportunities, AI projects, networking, or collaborations.</p>
+            </div>
+
+            <div class="contact-container">
+
+                <div class="card contact-info tilt" id="home-contact-info" data-reveal="left">
+                    <h2><i class="fa-solid fa-address-card"></i> Contact Information</h2>
+
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-user"></i> Name</span>
+                        <span class="value">Muhammad Talha Khan</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-envelope"></i> Email</span>
+                        <span class="value"><a href="mailto:talhakhan333000@gmail.com">talhakhan333000@gmail.com</a></span>
+                    </div>
+                    <div class="detail-row"><span class="label">GitHub</span><span class="value"><a href="https://github.com/TalhaBytes" target="_blank" rel="noopener noreferrer">TalhaBytes</a></span></div>
+                    <div class="detail-row">
+                        <span class="label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        <span class="value">Islamabad, Pakistan</span>
+                    </div>
+
+                    <div class="social-row">
+<a class="icon-btn" href="https://github.com/TalhaBytes" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a class="icon-btn" href="https://www.linkedin.com/in/muhammad-talha-khan-b0a96428b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="icon-btn" href="mailto:talhakhan333000@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        
+                    </div>
+                </div>
+
+                <div class="card contact-form tilt" id="home-contact-form" data-reveal="right">
+                    <h2><i class="fa-solid fa-paper-plane"></i> Send a Message</h2>
+
+                    <form id="contactForm">
+                        <div class="field">
+                            <label for="cName">Your Name</label>
+                            <input type="text" id="cName" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="field">
+                            <label for="cEmail">Your Email</label>
+                            <input type="email" id="cEmail" placeholder="jane@example.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="cMessage">Message</label>
+                            <textarea id="cMessage" rows="6" placeholder="Write your message..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block magnetic">
+                            <i class="fa-solid fa-paper-plane"></i> Open Email Draft
+                        </button>
+
+                        <p class="form-note">Opens in your email app, addressed to talhakhan333000@gmail.com</p>
+
+                        <div class="form-success">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Your email app should now be open with the message ready to send.</span>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo"><span class="tb-mark" aria-hidden="true">TB</span> talha<span class="accent">.</span>dev</div>
+                    <p>Software Engineer &amp; AI enthusiast, building at the intersection of intelligent systems and the networks that carry them.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="index.html">Home</a>
+                        <a href="experience.html">Experience</a>
+                        <a href="skills.html">Skills</a>
+                        <a href="education.html">Education</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4><a href="https://github.com/TalhaBytes" target="_blank" rel="noopener noreferrer">GitHub</a><a href="assets/Muhammad-Talha-Khan-Resume.pdf" download data-no-transition>Download Resume</a>
+                        <a href="mailto:talhakhan333000@gmail.com">Email</a>
+                        <a href="https://www.linkedin.com/in/muhammad-talha-khan-b0a96428b/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="contact.html">Contact Page</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Muhammad Talha Khan. All rights reserved.</span>
+                <span class="made-with">Built with <i class="fa-solid fa-heart"></i> and vanilla JS</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
