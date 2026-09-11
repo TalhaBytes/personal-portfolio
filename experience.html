@@ -19,6 +19,7 @@
     <meta name="theme-color" content="#090c14">
     <meta name="author" content="Muhammad Talha Khan">
     <link rel="canonical" href="https://talhabytes.github.io/Personal-Portfolio/experience.html">
+
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="TalhaBytes | Muhammad Talha Khan">
     <meta property="og:title" content="Experience | Muhammad Talha Khan">
@@ -28,18 +29,27 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="TB - Muhammad Talha Khan, Computer Science and Software Development">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Experience | Muhammad Talha Khan">
     <meta name="twitter:description" content="Professional experience, internships, and project work by Muhammad Talha Khan.">
     <meta name="twitter:image" content="https://talhabytes.github.io/Personal-Portfolio/assets/social-preview.png">
-    <noscript><style>body{opacity:1!important;transform:none!important}.preloader{display:none!important}[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+
+    <noscript>
+        <style>
+            body{opacity:1!important;transform:none!important}
+            .preloader{display:none!important}
+            [data-reveal]{opacity:1!important;transform:none!important}
+        </style>
+    </noscript>
 </head>
+
 <body>
 
     <div class="preloader">
         <div class="preloader-inner">
             <div class="line"><span class="prompt">$</span><span>cat experience.log</span></div>
-            <div class="line"><span class="prompt">$</span><span>loading <span class="ok">5 entries</span></span></div>
+            <div class="line"><span class="prompt">$</span><span>loading <span class="ok">6 entries</span></span></div>
             <div class="line"><span class="prompt">$</span><span>./render --timeline</span></div>
             <div class="preloader-bar"><span></span></div>
         </div>
@@ -52,18 +62,42 @@
         <div class="search-box">
             <div class="search-input-row">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchInput" placeholder="Search the portfolio... (e.g. Python, internship, SZABIST)" autocomplete="off" aria-label="Search the portfolio">
-                <button class="search-close" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search the portfolio... (e.g. Python, internship, SZABIST)"
+                    autocomplete="off"
+                    aria-label="Search the portfolio"
+                >
+
+                <button
+                    class="search-close"
+                    id="searchClose"
+                    aria-label="Close search"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
+
             <div class="search-results" id="searchResults">
-                <p class="search-hint">Try &ldquo;Python&rdquo;, &ldquo;internship&rdquo;, &ldquo;XGBoost&rdquo;, or &ldquo;SZABIST&rdquo;.</p>
+                <p class="search-hint">
+                    Try &ldquo;Python&rdquo;, &ldquo;internship&rdquo;,
+                    &ldquo;XGBoost&rdquo;, or &ldquo;SZABIST&rdquo;.
+                </p>
             </div>
         </div>
     </div>
 
+    <!-- ================= NAVBAR ================= -->
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo" data-no-transition><span class="tb-mark" aria-hidden="true">TB</span> talha<span class="accent">.</span>dev<span class="cursor-blink"></span></a>
+
+            <a href="index.html" class="logo" data-no-transition>
+                <span class="tb-mark" aria-hidden="true">TB</span>
+                talha<span class="accent">.</span>dev
+                <span class="cursor-blink"></span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -74,58 +108,211 @@
             </ul>
 
             <div class="nav-actions">
-<a class="icon-btn" href="https://github.com/TalhaBytes" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a class="icon-btn" href="https://www.linkedin.com/in/muhammad-talha-khan-b0a96428b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a class="icon-btn" href="mailto:talhakhan333000@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                <button class="icon-btn" id="themeToggle" aria-label="Toggle light / dark theme"><i class="fa-solid fa-moon theme-icon-dark"></i><i class="fa-solid fa-sun theme-icon-light"></i></button>
-                <button class="icon-btn" id="searchToggle" aria-label="Search (press /)"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+                <a
+                    class="icon-btn"
+                    href="https://github.com/TalhaBytes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                    class="icon-btn"
+                    href="https://www.linkedin.com/in/muhammad-talha-khan-b0a96428b/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a
+                    class="icon-btn"
+                    href="mailto:talhakhan333000@gmail.com"
+                    aria-label="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <button
+                    class="icon-btn"
+                    id="themeToggle"
+                    aria-label="Toggle light / dark theme"
+                >
+                    <i class="fa-solid fa-moon theme-icon-dark"></i>
+                    <i class="fa-solid fa-sun theme-icon-light"></i>
+                </button>
+
+                <button
+                    class="icon-btn"
+                    id="searchToggle"
+                    aria-label="Search (press /)"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
             </div>
+
         </nav>
     </header>
 
     <!-- ================= PAGE HERO ================= -->
     <section class="page-hero">
+
         <div class="container">
-            <span class="eyebrow">Experience</span>
-            <h1>Professional Experience</h1>
+
+            <span class="eyebrow">
+                Experience
+            </span>
+
+            <h1>
+                Professional Experience
+            </h1>
+
             <p>
                 My journey in technology includes internships, academic projects,
                 leadership experiences, and continuous learning in software development,
                 artificial intelligence, networking, and web technologies.
             </p>
+
         </div>
+
     </section>
 
     <!-- ================= EXPERIENCE ================= -->
     <section class="experience">
+
         <div class="container">
 
             <div class="filter-row" data-reveal>
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="internship">Internship</button>
-                <button class="filter-btn" data-filter="project">Projects</button>
-                <button class="filter-btn" data-filter="leadership">Leadership</button>
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="internship"
+                >
+                    Internship
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="project"
+                >
+                    Projects
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="leadership"
+                >
+                    Leadership
+                </button>
+
             </div>
 
-            <div class="timeline"><div class="experience-card" id="exp-devpulse" data-category="project" data-reveal>
-    <div class="node"><i class="fa-brands fa-github"></i></div><div class="card-body tilt">
-    <div class="card-top"><h2>DevPulse</h2><span class="period">HTML · CSS · JavaScript · GitHub REST API</span></div>
-    <h4>GitHub Developer Dashboard</h4><ul>
-    <li>Built a responsive dashboard for exploring public GitHub profiles and repositories.</li>
-    <li>Displayed repository statistics, top repositories, stars, forks, and programming-language distribution.</li>
-    <li>Added saved themes, loading states, caching, and handling for API errors and rate limits.</li>
-    </ul><a class="card-link" href="https://github.com/TalhaBytes/devpulse" target="_blank" rel="noopener noreferrer">View Code on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-    </div></div>
+            <div class="timeline">
 
-                <div class="experience-card" id="exp-network-intern" data-category="internship" data-reveal>
-                    <div class="node"><i class="fa-solid fa-network-wired"></i></div>
+                <!-- ================= DEVPULSE ================= -->
+                <div
+                    class="experience-card"
+                    id="exp-devpulse"
+                    data-category="project"
+                    data-reveal
+                >
+
+                    <div class="node">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
                     <div class="card-body tilt">
+
                         <div class="card-top">
-                            <h2>Network Administration Intern</h2>
-                            <span class="period">Jul 2026 – Aug 2026</span>
+                            <h2>DevPulse</h2>
+                            <span class="period">
+                                HTML · CSS · JavaScript · GitHub REST API
+                            </span>
                         </div>
-                        <h4>Ministry of Foreign Affairs (MOFA)</h4>
+
+                        <h4>
+                            GitHub Developer Dashboard
+                        </h4>
+
+                        <ul>
+                            <li>
+                                Built a responsive dashboard for exploring public
+                                GitHub profiles and repositories.
+                            </li>
+
+                            <li>
+                                Displayed repository statistics, top repositories,
+                                stars, forks, and programming-language distribution.
+                            </li>
+
+                            <li>
+                                Added saved themes, loading states, caching, and
+                                handling for API errors and rate limits.
+                            </li>
+                        </ul>
+
+                        <a
+                            class="card-link"
+                            href="https://github.com/TalhaBytes/devpulse"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Code on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= INTERNSHIP ================= -->
+                <div
+                    class="experience-card"
+                    id="exp-network-intern"
+                    data-category="internship"
+                    data-reveal
+                >
+
+                    <div class="node">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+
+                    <div class="card-body tilt">
+
+                        <div class="card-top">
+
+                            <h2>
+                                Network Administration Intern
+                            </h2>
+
+                            <span class="period">
+                                Jul 2026 – Aug 2026
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Ministry of Foreign Affairs (MOFA)
+                        </h4>
+
                         <ul>
                             <li>Assisted in network monitoring and troubleshooting.</li>
                             <li>Observed enterprise network infrastructure.</li>
@@ -133,116 +320,332 @@
                             <li>Learned network security practices.</li>
                             <li>Gained real-world experience in IT operations.</li>
                         </ul>
+
                     </div>
+
                 </div>
 
-                <div class="experience-card" id="exp-stock-prediction" data-category="project" data-reveal>
-                    <div class="node"><i class="fa-solid fa-brain"></i></div>
+                <!-- ================= STOCK PRICE PREDICTION ================= -->
+                <div
+                    class="experience-card"
+                    id="exp-stock-prediction"
+                    data-category="project"
+                    data-reveal
+                >
+
+                    <div class="node">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
                     <div class="card-body tilt">
+
                         <div class="card-top">
-                            <h2>Stock Price Prediction</h2>
-                            <span class="period">Python · AI · Data Science</span>
+
+                            <h2>
+                                Stock Price Prediction
+                            </h2>
+
+                            <span class="period">
+                                Python · AI · Data Science
+                            </span>
+
                         </div>
-                        <h4>Machine Learning Project</h4>
+
+                        <h4>
+                            Machine Learning Project
+                        </h4>
+
                         <ul>
                             <li>Built predictive models using Python.</li>
                             <li>Implemented Linear Regression.</li>
                             <li>Compared Decision Tree and XGBoost models.</li>
                             <li>Achieved an R² score of 99.5%.</li>
                         </ul>
+
                     </div>
+
                 </div>
 
-                <div class="experience-card" id="exp-trivia-quiz" data-category="project" data-reveal>
-                    <div class="node"><i class="fa-solid fa-gamepad"></i></div>
+                <!-- ================= QUIZVERSE ================= -->
+                <div
+                    class="experience-card"
+                    id="exp-quizverse"
+                    data-category="project"
+                    data-reveal
+                >
+
+                    <div class="node">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+
                     <div class="card-body tilt">
+
                         <div class="card-top">
-                            <h2>Trivia Quiz Game</h2>
-                            <span class="period">Object-Oriented Programming</span>
+
+                            <h2>
+                                QuizVerse
+                            </h2>
+
+                            <span class="period">
+                                Python · PySide6 · SQLite
+                            </span>
+
                         </div>
-                        <h4>C++ Project</h4>
+
+                        <h4>
+                            Windows Trivia Quiz Game
+                        </h4>
+
                         <ul>
-                            <li>Developed an interactive quiz game.</li>
-                            <li>Implemented score calculation.</li>
-                            <li>Applied OOP concepts.</li>
-                            <li>Improved classroom engagement.</li>
+                            <li>
+                                Built a complete offline Windows trivia application
+                                with 162 built-in questions.
+                            </li>
+
+                            <li>
+                                Implemented timed quizzes, difficulty levels, scoring,
+                                streaks, profiles, achievements, and leaderboards.
+                            </li>
+
+                            <li>
+                                Developed persistent local storage with SQLite and an
+                                integrated question-management system.
+                            </li>
+
+                            <li>
+                                Added automated testing with Pytest and GitHub Actions
+                                and packaged the application using PyInstaller.
+                            </li>
                         </ul>
+
+                        <a
+                            class="card-link"
+                            href="https://github.com/TalhaBytes/QuizVerse"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Code on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a
+                            class="card-link"
+                            href="https://github.com/TalhaBytes/QuizVerse/releases/latest"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Download Windows App
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+
                     </div>
+
                 </div>
 
-                <div class="experience-card" id="exp-portfolio-website" data-category="project" data-reveal>
-                    <div class="node"><i class="fa-solid fa-code"></i></div>
+                <!-- ================= PORTFOLIO ================= -->
+                <div
+                    class="experience-card"
+                    id="exp-portfolio-website"
+                    data-category="project"
+                    data-reveal
+                >
+
+                    <div class="node">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
                     <div class="card-body tilt">
+
                         <div class="card-top">
-                            <h2>Personal Portfolio Website</h2>
-                            <span class="period">HTML · CSS · JavaScript</span>
+
+                            <h2>
+                                Personal Portfolio Website
+                            </h2>
+
+                            <span class="period">
+                                HTML · CSS · JavaScript
+                            </span>
+
                         </div>
-                        <h4>Web Development</h4>
+
+                        <h4>
+                            Web Development
+                        </h4>
+
                         <ul>
                             <li>Designed a fully responsive multi-page website.</li>
                             <li>Built custom animation and interaction systems.</li>
                             <li>Implemented on-site keyword search.</li>
                             <li>Focused on accessible, professional UI design.</li>
                         </ul>
+
                     </div>
+
                 </div>
 
-                <div class="experience-card" id="exp-study-group" data-category="leadership" data-reveal>
-                    <div class="node"><i class="fa-solid fa-users"></i></div>
+                <!-- ================= LEADERSHIP ================= -->
+                <div
+                    class="experience-card"
+                    id="exp-study-group"
+                    data-category="leadership"
+                    data-reveal
+                >
+
+                    <div class="node">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
                     <div class="card-body tilt">
+
                         <div class="card-top">
-                            <h2>Programming Study Group Leader</h2>
-                            <span class="period">Peer Learning</span>
+
+                            <h2>
+                                Programming Study Group Leader
+                            </h2>
+
+                            <span class="period">
+                                Peer Learning
+                            </span>
+
                         </div>
-                        <h4>Academic Leadership</h4>
+
+                        <h4>
+                            Academic Leadership
+                        </h4>
+
                         <ul>
                             <li>Led OOP study sessions.</li>
                             <li>Helped classmates prepare for exams.</li>
                             <li>Improved communication and leadership skills.</li>
                         </ul>
+
                     </div>
+
                 </div>
 
             </div>
 
         </div>
+
     </section>
 
     <!-- ================= FOOTER ================= -->
     <footer>
+
         <div class="container">
+
             <div class="footer-grid">
+
                 <div class="footer-brand">
-                    <div class="logo"><span class="tb-mark" aria-hidden="true">TB</span> talha<span class="accent">.</span>dev</div>
-                    <p>Software Engineer &amp; AI enthusiast, building at the intersection of intelligent systems and the networks that carry them.</p>
+
+                    <div class="logo">
+                        <span class="tb-mark" aria-hidden="true">TB</span>
+                        talha<span class="accent">.</span>dev
+                    </div>
+
+                    <p>
+                        Software Engineer &amp; AI enthusiast, building at the
+                        intersection of intelligent systems and the networks that carry them.
+                    </p>
+
                 </div>
 
                 <div class="footer-links">
+
                     <div class="footer-col">
-                        <h4>Navigate</h4>
-                        <a href="index.html">Home</a>
-                        <a href="experience.html">Experience</a>
-                        <a href="skills.html">Skills</a>
-                        <a href="education.html">Education</a>
+
+                        <h4>
+                            Navigate
+                        </h4>
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                        <a href="experience.html">
+                            Experience
+                        </a>
+
+                        <a href="skills.html">
+                            Skills
+                        </a>
+
+                        <a href="education.html">
+                            Education
+                        </a>
+
                     </div>
+
                     <div class="footer-col">
-                        <h4>Connect</h4><a href="https://github.com/TalhaBytes" target="_blank" rel="noopener noreferrer">GitHub</a><a href="assets/Muhammad-Talha-Khan-Resume.pdf" download data-no-transition>Download Resume</a>
-                        <a href="mailto:talhakhan333000@gmail.com">Email</a>
-                        <a href="https://www.linkedin.com/in/muhammad-talha-khan-b0a96428b/" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="contact.html">Contact Page</a>
+
+                        <h4>
+                            Connect
+                        </h4>
+
+                        <a
+                            href="https://github.com/TalhaBytes"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="assets/Muhammad-Talha-Khan-Resume.pdf"
+                            download
+                            data-no-transition
+                        >
+                            Download Resume
+                        </a>
+
+                        <a href="mailto:talhakhan333000@gmail.com">
+                            Email
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/muhammad-talha-khan-b0a96428b/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <a href="contact.html">
+                            Contact Page
+                        </a>
+
                     </div>
+
                 </div>
+
             </div>
 
             <div class="footer-bottom">
-                <span>&copy; 2026 Muhammad Talha Khan. All rights reserved.</span>
-                <span class="made-with">Built with <i class="fa-solid fa-heart"></i> and vanilla JS</span>
+
+                <span>
+                    &copy; 2026 Muhammad Talha Khan. All rights reserved.
+                </span>
+
+                <span class="made-with">
+                    Built with
+                    <i class="fa-solid fa-heart"></i>
+                    and vanilla JS
+                </span>
+
             </div>
+
         </div>
+
     </footer>
 
-    <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>
